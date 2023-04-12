@@ -1,0 +1,49 @@
+.bgBody{
+    background-color: rgb(32, 32, 97);
+}
+
+.titleTxt{
+    color: rgb(255, 27, 72);
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Concert One', cursive;
+}
+.budgetBx{
+
+    margin-top: 6rem;
+}
+
+.budgetTxt{
+    color: rgb(255, 27, 72);
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Concert One', cursive;
+}
+.budgetCardColor{
+    background-color: rgb(53, 38, 167);
+}
+.itemCardColor{
+    background-color: rgb(53, 38, 167);
+}
+.priceCardColor{
+    background-color: rgb(53, 38, 167);
+}
+.inputStyle{
+    width: 18rem;
+    outline-color: red;
+}
+
+.offCan{
+    background-color: rgb(53, 38, 167);
+}
+.navStyles{
+    background-color: rgb(53, 38, 167);
+}
+.txtColor{
+    color: rgb(255, 27, 72);
+    font-family: 'Concert One', cursive;
+}
+
+.removeBtn{
+    width: 6rem;
+}

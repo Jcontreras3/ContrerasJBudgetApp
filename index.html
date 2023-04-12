@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Budget app</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="bgBody">
+    <nav class="navbar navStyles fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand titleTxt">Budget App</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header offCan">
+            <h5 class="offcanvas-title txtColor" id="offcanvasNavbarLabel">
+              Start Budgeting
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body offCan">
+            <p>
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseWidthExample"
+                aria-expanded="false"
+                aria-controls="collapseWidthExample"
+              >
+                Info
+              </button>
+            </p>
+            <div style="min-height: 120px">
+              <div
+                class="collapse collapse-horizontal"
+                id="collapseWidthExample"
+              >
+                <div class="card card-body" style="width: 300px">
+                  To start budgeting add your limit, the company youre buying
+                  from or what you are buying and last the price of the item you
+                  are buying.
+                </div>
+              </div>
+            </div>
+            <p class="txtColor">Budget</p>
+            <input
+              id="limitValue"
+              placeholder="$"
+              class="inputStyle"
+              type="text"
+            /><button type="button" class="btn btn-danger" id="limitBtn">
+              Submit
+            </button>
+            <p class="txtColor">Item</p>
+            <input
+              id="itemValue"
+              placeholder="Item"
+              class="inputStyle"
+              type="text"
+            /><button type="button" class="btn btn-danger" id="itemBtn">
+              Submit
+            </button>
+            <p class="txtColor">Price</p>
+            <input
+              id="priceValue"
+              placeholder="$"
+              class="inputStyle"
+              type="text"
+            /><button type="button" class="btn btn-danger" id="priceBtn">
+              Submit
+            </button>
+            <div id="clearInject"></div>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row over-flow-y">
+        <div id="budgetInject" class="budgetBx"></div>
+        <div id="itemInject" class=""></div>
+        <div id="priceInject" class=""></div>
+        <button type="button" class="btn btn-danger" id="resBtn">Result</button>
+        <div id="resInject" class=""></div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/app.js" type="module"></script>
+  </body>
+</html>
